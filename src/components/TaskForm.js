@@ -7,7 +7,7 @@ function TaskForm({ onTaskAdded }) {
   const [dueDate, setDueDate] = useState('');
   const [priority, setPriority] = useState('low');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {         //Task submition
     e.preventDefault();
     if (!title) return;
     await addDoc(collection(db, "tasks"), {
@@ -30,7 +30,7 @@ function TaskForm({ onTaskAdded }) {
           type="text"
           placeholder="Enter new task..."
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}    //entering a new task into the app
         />
       </div>
       <div className="form-row">
@@ -38,12 +38,12 @@ function TaskForm({ onTaskAdded }) {
           className="form-input"
           type="date"
           value={dueDate}
-          onChange={(e) => setDueDate(e.target.value)}
+          onChange={(e) => setDueDate(e.target.value)}    //Set the Date of task
         />
         <select
           className="form-input"
           value={priority}
-          onChange={(e) => setPriority(e.target.value)}
+          onChange={(e) => setPriority(e.target.value)}    //Set the Priority of task
         >
           <option value="low">Low</option>
           <option value="medium">Medium</option>

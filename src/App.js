@@ -7,7 +7,7 @@ import './styles.css';
 function App() {
   const [tasks, setTasks] = useState([]);
 
-  const fetchTasks = async () => {
+  const fetchTasks = async () => {                                //Fetch tasks from the database
     const querySnapshot = await getDocs(collection(db, "tasks"));
     const taskList = querySnapshot.docs.map(doc => ({
       id: doc.id,
