@@ -3,10 +3,11 @@
   --background: #f8fafc;
   --foreground: #1e293b;
   --card: #ffffff;
-  --accent: #4db6ac; /* Teal */
+  --accent: #3a5bed; 
   --priority-high: #ef4444; /* Red */
   --priority-medium: #e0b700; /* Yellow */
   --priority-low: #659e0f; /* Green */
+  --border_task: #4596ff;
   --border: #e2e8f0;
   --muted: #64748b;
   --radius: 0.5rem;
@@ -40,11 +41,14 @@ body {
 
 /* Task Form */
 .task-form {
-  margin-bottom: 2rem;
-  background: var(--card);
-  padding: 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .form-group {
@@ -52,9 +56,9 @@ body {
 }
 
 .form-input {
-  width: 100%;
+  width: 96%;
   padding: 0.75rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border_task);
   border-radius: var(--radius);
   font-size: 1rem;
   margin-bottom: 0.75rem;
@@ -82,7 +86,7 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: #3aa395;
+  background-color: #5d76dc;
 }
 
 /* Task List */
