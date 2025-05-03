@@ -45,7 +45,7 @@ git clone <https://github.com/telRes24/DailyTaskPlanner_20P.git>
 
 \# 2. Navigate into the project directory
 
-cd DailyTaskPlanner_20P
+cd your_path/DailyTaskPlanner_20P-master
 
 \# 3. Install dependencies
 
